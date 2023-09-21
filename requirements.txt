@@ -1,0 +1,5 @@
+tornado
+pyjwt
+aiomysql
+python-dotenv
+redis

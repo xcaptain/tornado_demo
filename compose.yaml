@@ -1,0 +1,15 @@
+services:
+  mysql:
+    image: mysql:8.0.34
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./sqls/demo_db.sql:/docker-entrypoint-initdb.d/demo_db.sql
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "true"
+      MYSQL_DATABASE: demo_db
+
+  redis:
+    image: redis/redis-stack:7.2.0-v0
+    ports:
+      - "6379:6379"

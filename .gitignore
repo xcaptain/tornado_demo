@@ -1,0 +1,7 @@
+.venv
+__pycache__
+log
+*.egg-info
+.env
+.coverage
+.env.docker
